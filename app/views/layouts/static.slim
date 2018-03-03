@@ -6,6 +6,8 @@ html
     = csrf_meta_tags
     = stylesheet_pack_tag 'static'
   body
+    = render 'src/components/static/shared/nav'
     = yield
+    = render 'src/components/static/shared/footer'
     = javascript_pack_tag 'static'
  
